@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 .create();
 
         List<Pokemon> pokemonList = getDataFromCache();
-        if(pokemonList != null){
+        if(pokemonList != null && pokemonList.size() != 0){
             showList(pokemonList);
         }
         else {
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private List<Pokemon> getDataFromCache() {
-        String jsonPokemon = sharedPreferences.getString(Constants.KEY_POKEMON_LIST,  null);
+        String jsonPokemon = sharedPreferences.getString(Constants.KEY_POKEMON_LIST,null);
         if(jsonPokemon == null){
             return null;
         }else {
