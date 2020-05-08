@@ -7,7 +7,9 @@ import androidx.recyclerview.widget.RecyclerView.LayoutManager;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.media.Image;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
@@ -28,16 +30,19 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String BASE_URL = "https://pokeapi.co";
 
+
     private RecyclerView recyclerView;
     private ListAdapter mAdapter;
     private LayoutManager layoutManager;
     private SharedPreferences sharedPreferences;
     private Gson gson;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         sharedPreferences = getSharedPreferences("application_esiea",Context.MODE_PRIVATE);
         gson = new GsonBuilder()
@@ -45,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 .create();
 
         List<Pokemon> pokemonList = getDataFromCache();
+
         if(pokemonList != null && pokemonList.size() != 0){
             showList(pokemonList);
         }
