@@ -17,3 +17,5 @@ Projet android ayant pour but la création d'un pokedex réaliser par KANAWATI R
  
  
 ## Image de l'application
+
+<img src="https://user-images.githubusercontent.com/62397552/82733560-e1b71400-9d14-11ea-99e8-fa18fe3c5168.jpg" width="360" height="640" />
