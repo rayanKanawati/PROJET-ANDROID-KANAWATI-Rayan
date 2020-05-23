@@ -12,8 +12,12 @@ Projet android ayant pour but la création d'un pokedex réalisé par KANAWATI R
   https://github.com/rayanKanawati/PROJET-ANDROID-KANAWATI-Rayan
   
 ## Consigne respecté : 
- * Affichage d'une liste de Pokémon
- * Afiichage d'une image de Pokémon associé à son nom
+
+ * Affichage d'une liste de Pokémon via une recyclerView
+ * Réalisation d'un appel serveur
+ * Stockage de données
+ * Affichage d'une image de Pokémon associé à son nom
+
  
  
 ## Image de l'application
