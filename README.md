@@ -2,7 +2,7 @@
 
 ## Description
 
-Projet android ayant pour but la création d'un pokedex réaliser par KANAWATI Rayan étudiant à L'ESIEA
+Projet android ayant pour but la création d'un pokedex réalisé par KANAWATI Rayan étudiant à L'ESIEA
 
 ## Prérequis
 
