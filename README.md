@@ -16,6 +16,7 @@ Projet android ayant pour but la création d'un pokedex réalisé par KANAWATI R
  * Affichage d'une liste de Pokémon via une recyclerView
  * Réalisation d'un appel serveur
  * Stockage de données
+ * Architecture MVC/Singleton
  * Affichage d'une image de Pokémon associé à son nom
 
  
