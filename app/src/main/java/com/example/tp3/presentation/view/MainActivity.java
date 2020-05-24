@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.tp3.Constants;
 import com.example.tp3.R;
+import com.example.tp3.Singletons;
 import com.example.tp3.data.PokeApi;
 import com.example.tp3.presentation.controller.MainController;
 import com.example.tp3.presentation.model.Pokemon;
@@ -48,10 +49,8 @@ public class MainActivity extends AppCompatActivity {
 
         controller = new MainController(
               this,
-            new GsonBuilder()
-                .setLenient()
-                .create(),
-            getSharedPreferences("application_esiea", Context.MODE_PRIVATE)
+                Singletons.getGson(),
+                Singletons.getSharedPreferencesInstance(getApplicationContext())
         );
         controller.onStart();
 
