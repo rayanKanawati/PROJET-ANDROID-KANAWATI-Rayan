@@ -17,6 +17,11 @@ import java.util.List;
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     private List<Pokemon> values;
+    private OnItemClickListener listener;
+
+    public interface OnItemClickListener {
+        void onItemClick(Pokemon item);
+    }
 
 
     // Provide a reference to the views for each data item
@@ -52,8 +57,12 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
     }
 
     // Provide a suitable constructor (depends on the kind of dataset)
-    ListAdapter(List<Pokemon> myDataset) {
-        values = myDataset;
+    ListAdapter(List<Pokemon> myDataset, OnItemClickListener listener) {
+        this.values = myDataset;
+        this.listener = listener;
+    }
+    public void setListener(OnItemClickListener listener){
+        this.listener = listener;
     }
 
     // Create new views (invoked by the layout manager)
@@ -86,6 +95,11 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
             }
         });
         holder.txtFooter.setText(currentPokemon.getUrl());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                listener.onItemClick(currentPokemon);
+            }
+        });
 
         Picasso.get()
                 .load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+(position+1)+".png")

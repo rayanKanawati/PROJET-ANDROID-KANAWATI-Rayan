@@ -41,6 +41,9 @@ public class MainController {
         }
 
     }
+    public void onItemCLick(Pokemon pokemon){
+        view.navigateToDetails(pokemon);
+    }
     private void makeApiCall(){
 
 
