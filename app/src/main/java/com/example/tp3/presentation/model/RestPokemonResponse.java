@@ -1,4 +1,4 @@
-package com.example.tp3;
+package com.example.tp3.presentation.model;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class RestPokemonResponse {
         return next;
     }
 
-    List<Pokemon> getResults() {
+    public List<Pokemon> getResults() {
         return results;
     }
 }

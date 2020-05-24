@@ -1,4 +1,4 @@
-package com.example.tp3;
+package com.example.tp3.presentation.view;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.tp3.R;
+import com.example.tp3.presentation.model.Pokemon;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

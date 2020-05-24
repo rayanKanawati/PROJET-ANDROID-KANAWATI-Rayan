@@ -1,4 +1,4 @@
-package com.example.tp3;
+package com.example.tp3.presentation.model;
 
 public class Pokemon {
     private String name;
