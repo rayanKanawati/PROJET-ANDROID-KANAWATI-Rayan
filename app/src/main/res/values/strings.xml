@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TP3</string>
+    <string name="detail_text_description">Ecran_detail</string>
 </resources>
