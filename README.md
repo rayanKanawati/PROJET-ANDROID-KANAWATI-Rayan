@@ -2,23 +2,28 @@
 
 ## Description
 
-Projet android ayant pour but de créer une interface de connexion avec possibilité de créer un compte.
+
+Projet android ayant pour but la création d'un pokedex réalisé par KANAWATI Rayan étudiant à L'ESIEA
 Une fois l'utilisateur connecté, il pourra accéder à la liste des pokémon
 
-## Prérequis
 
-* Installation du logiciel Android Studio (disponible sur Mac, Linux et Windows)
+## Prérequis	
+
+
+* Installation du logiciel Android Studio (disponible sur Mac, Linux et Windows)	
+* Récupérer le programme grâce au lien Github suivant:	
 * Récupérer le programme grâce au lien Github suivant:
 
-https://github.com/rayanKanawati/Android4A
-  
+  https://github.com/rayanKanawati/PROJET-ANDROID-KANAWATI-Rayan	
+
 ## Consigne respecté : 
 
- * Affichage d'une liste de Pokémon via une recyclerView
- * Réalisation d'un appel serveur
- * Architecture MVVm
- * Possibilité de création de compte stocké dans une base de données
- * Possibilité de connexion avec ce compte
+
+ * Affichage d'une liste de Pokémon via une recyclerView	
+ * Réalisation d'un appel serveur	
+ * Stockage de données	
+ * Architecture MVC/Singleton	
+ * Affichage d'une image de Pokémon associé à son nom
 
  
 ## Image de l'application
