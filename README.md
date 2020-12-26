@@ -12,8 +12,6 @@ Une fois l'utilisateur connecté, il pourra accéder à la liste des pokémon
 
 * Installation du logiciel Android Studio (disponible sur Mac, Linux et Windows)	
 * Récupérer le programme grâce au lien Github suivant:	
-* Récupérer le programme grâce au lien Github suivant:
-
   https://github.com/rayanKanawati/PROJET-ANDROID-KANAWATI-Rayan	
 
 ## Consigne respecté : 
